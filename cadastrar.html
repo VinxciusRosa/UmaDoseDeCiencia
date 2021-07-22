@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="icon" href="img/atomo.png" type="image/x-icon">
+	<title>Uma Dose de Ciência™ | Home</title>
+	<link rel="stylesheet type=" text/css href="css/style_cadastrar.css">
+</head>
+<header>
+	<div class="wrapper">
+		<a href="index.html">
+			<img src="img/atomo.png">
+			<span> Uma Dose de Ciência</span>
+		</a>
+		<nav>
+			<!--ONDE FICAM OS MENUS PRINCIPAIS DO SITE -->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="noticias.html">Notícias</a></li>
+				<li><a href="eventos.html">Eventos</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li><a href="cadastrar.html">Cadastrar</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<body>
+	<div class="wrapper content">
+		<main>
+			<!--conteudo principal -->
+			<h1>Cadastrar</h1>
+			
+			<form action="destino-dados.php" method="post">
+
+				<label>GÊNERO</label><br>
+				<input type="radio" id="genero-f" name="genero" value="F" checked>
+				<label for="genero-f">Feminino</label>
+				<input type="radio" id="genero-m" name="genero" value="M">
+				<label for="genero-m">Masculino</label><br><br>
+
+				<label>ESTADO</label><br>
+				<select name="estado">
+					<option value="SP">São Paulo</option>
+					<option value="RJ">Rio de Janeiro</option>
+					<option value="MG">Minas Gerais</option>
+				</select>
+				<br><br>
+			
+				<label for="txt-nome">NOME COMPLETO</label><br>
+				<input type="text" id="txt-nome" name="nome" placeholder="Dígite seu Nome Completo..."><br><br>
+
+				<label for="txt-email">E-MAIL</label><br>
+				<input type="text" id="txt-email" name="email" placeholder="exemplo@gmail.com"><br><br>
+		
+				<label for="txt-usuario">NOME DE USUÁRIO</label><br>
+				<input type="text" id="txt-usuario" name="usuario" placeholder="Informe um nome de Usuário..."><br><br>
+
+				<label for="txt-senha">SENHA</label><br>
+				<input type="password" id="txt-senha" name="senha" placeholder="Digíte sua Senha..."><br><br>
+
+				<input type="checkbox" id="cb-news" name="news" value="V" checked>
+				<label for="cb-news">Deseja Receber nossa NewLetter?</label><br><br>
+
+				<input type="submit" value="CADASTRAR">
+				
+			</form>
+		</main>
+	</div>
+	<footer>
+		<!--footer é a barra que fica no final da página -->
+		<span>Uma Dose de Ciência © 2021</span>
+		<ul>
+			<li><a href="quem-somos.html">Quem Somos</a></li>
+		</ul>
+	</footer>
+
+
+</body>
+
+</html>
